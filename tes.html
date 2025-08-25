@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-indigo-600">MyPortfolio</h1>
+      <ul class="flex gap-6 text-gray-700 font-medium">
+        <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+        <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
+        <li><a href="#portfolio" class="hover:text-indigo-600">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center px-6">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Hi, I’m Ilham 👋</h2>
+    <p class="text-lg md:text-xl max-w-2xl">Informatics student passionate about web development, GIS systems, and creative digital solutions.</p>
+    <a href="#portfolio" class="mt-6 px-6 py-3 bg-white text-indigo-600 rounded-full font-semibold shadow hover:bg-indigo-100 transition">View My Work</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+    <div class="md:flex items-center gap-10">
+      <img src="assets/images/about.jpg" alt="Profile" class="w-64 rounded-2xl shadow-lg mx-auto md:mx-0">
+      <p class="mt-6 md:mt-0 text-lg text-gray-600 leading-relaxed">
+        Saya adalah mahasiswa Informatika dengan minat besar pada pengembangan aplikasi web, pemetaan berbasis GIS, serta pengembangan sistem rekomendasi. Aktif berorganisasi di GenBI Unimal dan berpengalaman membangun website resmi organisasi.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-100 py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <div>
+        <p class="font-semibold mb-2">Web Development</p>
+        <div class="w-full bg-gray-300 h-3 rounded-full">
+          <div class="bg-indigo-600 h-3 rounded-full w-[80%]"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">GIS Mapping</p>
+        <div class="w-full bg-gray-300 h-3 rounded-full">
+          <div class="bg-indigo-600 h-3 rounded-full w-[70%]"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">Database Management</p>
+        <div class="w-full bg-gray-300 h-3 rounded-full">
+          <div class="bg-indigo-600 h-3 rounded-full w-[75%]"></div>
+        </div>
+      </div>
+      <div>
+        <p class="font-semibold mb-2">UI/UX Design</p>
+        <div class="w-full bg-gray-300 h-3 rounded-full">
+          <div class="bg-indigo-600 h-3 rounded-full w-[60%]"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="max-w-6xl mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="assets/images/portfolio/p1.jpg" alt="Project" class="group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-indigo-600/80 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition">
+          <a href="#" class="font-semibold">View Project</a>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="assets/images/portfolio/p2.jpg" alt="Project" class="group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-indigo-600/80 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition">
+          <a href="#" class="font-semibold">View Project</a>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden rounded-xl shadow-lg">
+        <img src="assets/images/portfolio/p3.jpg" alt="Project" class="group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-indigo-600/80 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition">
+          <a href="#" class="font-semibold">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+    <form class="max-w-3xl mx-auto bg-white rounded-xl shadow p-8 space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border p-3 rounded-lg">
+      <input type="email" placeholder="Your Email" class="w-full border p-3 rounded-lg">
+      <textarea rows="5" placeholder="Your Message" class="w-full border p-3 rounded-lg"></textarea>
+      <button class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <p>© 2025 Ilham. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
